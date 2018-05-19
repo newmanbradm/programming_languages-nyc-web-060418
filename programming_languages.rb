@@ -5,6 +5,8 @@ def reformat_languages(languages)
     language_hash.each do |language, attributes_hash|
       attributes_hash.each do |attribute, string|
         if attribute[language].nil?
+          attribute[language] = {}
+          
   
   
   new_hash
